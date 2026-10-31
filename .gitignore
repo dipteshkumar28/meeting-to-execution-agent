@@ -1,0 +1,32 @@
+# ---------- Secrets ----------
+.env
+.env.*
+!.env.example
+
+# ---------- Backend (Python) ----------
+backend/.venv/
+backend/__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.mypy_cache/
+
+# SQLite memory database (created at runtime)
+*.db
+*.db-journal
+*.sqlite3
+
+# ---------- Frontend (Node / Vite) ----------
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+*.local
+npm-debug.log*
+yarn-error.log*
+
+# ---------- Editor / OS ----------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
